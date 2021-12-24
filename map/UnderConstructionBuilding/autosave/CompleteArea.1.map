@@ -1,0 +1,189 @@
+// Game: Qodot_Final_Hours
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_mod" "textures"
+"_tb_textures" "textures;textures/Map/Exterior"
+// brush 0
+{
+( 3188 244 8 ) ( 3188 -524 8 ) ( 3188 -524 -4 ) StreetsTemplate 140 -12 0 1 1
+( 3188 244 8 ) ( 3236 244 12 ) ( 3236 -524 12 ) StreetsTemplate -164 52 0 1 1
+( 3188 -524 8 ) ( 3236 -524 12 ) ( 3236 -524 -4 ) StreetsTemplate -164 -12 0 1 1
+( 3236 -524 -4 ) ( 3236 244 -4 ) ( 3188 244 -4 ) StreetsTemplate -164 52 0 1 1
+( 3236 244 -4 ) ( 3236 244 12 ) ( 3188 244 8 ) StreetsTemplate -164 -12 0 1 1
+( 3236 -524 12 ) ( 3236 244 12 ) ( 3236 244 -4 ) StreetsTemplate 140 -12 0 1 1
+}
+// brush 1
+{
+( 3092 -332 4 ) ( 3092 -188 4 ) ( 3092 -188 132 ) StreetsTemplate 140 -12 0 1 1
+( 2404 -524 -28 ) ( 2404 -524 -27 ) ( 2405 -524 -28 ) StreetsTemplate -164 -12 0 1 1
+( 2404 -204 -4 ) ( 2405 -204 -4 ) ( 2404 -203 -4 ) StreetsTemplate -164 52 0 1 1
+( 2532 -76 8 ) ( 2532 -75 8 ) ( 2533 -76 8 ) StreetsTemplate -164 52 0 1 1
+( 2532 244 4 ) ( 2533 244 4 ) ( 2532 244 5 ) StreetsTemplate -164 -12 0 1 1
+( 3188 -348 4 ) ( 3188 -252 132 ) ( 3188 -252 4 ) StreetsTemplate 140 -12 0 1 1
+}
+// brush 2
+{
+( 2996 244 4 ) ( 2996 -524 4 ) ( 2996 -524 -4 ) StreetsTemplate 140 -16 0 1 1
+( 2996 -524 4 ) ( 3092 -524 0 ) ( 3092 -524 -4 ) StreetsTemplate -164 -16 0 1 1
+( 3092 -524 -4 ) ( 3092 244 -4 ) ( 2996 244 -4 ) StreetsTemplate -164 52 0 1 1
+( 3092 244 -4 ) ( 3092 244 0 ) ( 2996 244 4 ) StreetsTemplate -164 -16 0 1 1
+( 2996 244 4 ) ( 3092 244 0 ) ( 3092 -524 0 ) StreetsTemplate -164 52 0 1 1
+( 3092 -524 0 ) ( 3092 244 0 ) ( 3092 244 -4 ) StreetsTemplate 140 -16 0 1 1
+}
+// brush 3
+{
+( 2852 244 6 ) ( 2852 -524 6 ) ( 2852 -524 -4 ) StreetsTemplate 140 -16 0 1 1
+( 2852 -524 6 ) ( 2996 -524 4 ) ( 2996 -524 -4 ) StreetsTemplate -164 -16 0 1 1
+( 2996 -524 -4 ) ( 2996 244 -4 ) ( 2852 244 -4 ) StreetsTemplate -164 52 0 1 1
+( 2996 244 -4 ) ( 2996 244 4 ) ( 2852 244 6 ) StreetsTemplate -164 -16 0 1 1
+( 2852 244 6 ) ( 2996 244 4 ) ( 2996 -524 4 ) StreetsTemplate -164 52 0 1 1
+( 2996 -524 4 ) ( 2996 244 4 ) ( 2996 244 -4 ) StreetsTemplate 140 -16 0 1 1
+}
+// brush 4
+{
+( 2708 244 4 ) ( 2708 -524 4 ) ( 2708 -524 -4 ) StreetsTemplate 140 -16 0 1 1
+( 2708 244 4 ) ( 2852 244 6 ) ( 2852 -524 6 ) StreetsTemplate -164 52 0 1 1
+( 2708 -524 4 ) ( 2852 -524 6 ) ( 2852 -524 -4 ) StreetsTemplate -164 -16 0 1 1
+( 2852 -524 -4 ) ( 2852 244 -4 ) ( 2708 244 -4 ) StreetsTemplate -164 52 0 1 1
+( 2852 244 -4 ) ( 2852 244 6 ) ( 2708 244 4 ) StreetsTemplate -164 -16 0 1 1
+( 2852 -524 6 ) ( 2852 244 6 ) ( 2852 244 -4 ) StreetsTemplate 140 -16 0 1 1
+}
+// brush 5
+{
+( 2612 244 0 ) ( 2612 -524 0 ) ( 2612 -524 -4 ) StreetsTemplate 140 -16 0 1 1
+( 2612 244 0 ) ( 2708 244 4 ) ( 2708 -524 4 ) StreetsTemplate -164 52 0 1 1
+( 2612 -524 0 ) ( 2708 -524 4 ) ( 2708 -524 -4 ) StreetsTemplate -164 -16 0 1 1
+( 2708 -524 -4 ) ( 2708 244 -4 ) ( 2612 244 -4 ) StreetsTemplate -164 52 0 1 1
+( 2708 244 -4 ) ( 2708 244 4 ) ( 2612 244 0 ) StreetsTemplate -164 -16 0 1 1
+( 2708 -524 4 ) ( 2708 244 4 ) ( 2708 244 -4 ) StreetsTemplate 140 -16 0 1 1
+}
+// brush 6
+{
+( 2516 -508 4 ) ( 2516 -300 4 ) ( 2516 -300 132 ) StreetsTemplate 140 -12 0 1 1
+( 2404 -524 -28 ) ( 2404 -524 -27 ) ( 2405 -524 -28 ) StreetsTemplate -164 -12 0 1 1
+( 2404 -204 -4 ) ( 2405 -204 -4 ) ( 2404 -203 -4 ) StreetsTemplate -164 52 0 1 1
+( 2532 -76 8 ) ( 2532 -75 8 ) ( 2533 -76 8 ) StreetsTemplate -164 52 0 1 1
+( 2532 244 4 ) ( 2533 244 4 ) ( 2532 244 5 ) StreetsTemplate -164 -12 0 1 1
+( 2612 -492 4 ) ( 2612 -348 132 ) ( 2612 -348 4 ) StreetsTemplate 140 -12 0 1 1
+}
+// brush 7
+{
+( 2468 244 12 ) ( 2468 -524 12 ) ( 2468 -524 -4 ) StreetsTemplate 140 -12 0 1 1
+( 2468 -524 12 ) ( 2516 -524 8 ) ( 2516 -524 -4 ) StreetsTemplate -164 -12 0 1 1
+( 2516 -524 -4 ) ( 2516 244 -4 ) ( 2468 244 -4 ) StreetsTemplate -164 52 0 1 1
+( 2516 244 -4 ) ( 2516 244 8 ) ( 2468 244 12 ) StreetsTemplate -164 -12 0 1 1
+( 2468 244 12 ) ( 2516 244 8 ) ( 2516 -524 8 ) StreetsTemplate -164 52 0 1 1
+( 2516 -524 8 ) ( 2516 244 8 ) ( 2516 244 -4 ) StreetsTemplate 140 -12 0 1 1
+}
+// brush 8
+{
+( -30 -1187 0 ) ( -30 -1186 0 ) ( -30 -1187 1 ) Template_Checkered_256_Blue 67 0 0 1 1
+( -46 -1219 0 ) ( -46 -1219 1 ) ( -45 -1219 0 ) Template_Checkered_256_Blue 126 0 0 1 1
+( -46 -1187 0 ) ( -45 -1187 0 ) ( -46 -1186 0 ) Template_Checkered_256_Blue 126 -67 0 1 1
+( -14 -1155 68 ) ( -14 -1154 68 ) ( -13 -1155 68 ) Template_Checkered_256_Blue 126 -67 0 1 1
+( -14 -1187 16 ) ( -13 -1187 16 ) ( -14 -1187 17 ) Template_Checkered_256_Blue 126 0 0 1 1
+( 2 -1155 16 ) ( 2 -1155 17 ) ( 2 -1154 16 ) Template_Checkered_256_Blue 67 0 0 1 1
+}
+// brush 9
+{
+( 2559 -291 40 ) ( 2559 -290 40 ) ( 2559 -291 41 ) Checkered_128_OldSchoolJoker 63 0 0 1 1
+( 2559 -271 60 ) ( 2687 -287 40 ) ( 2559 -287 40 ) Checkered_128_OldSchoolJoker -87 0 0 1 1
+( 2559 -291 40 ) ( 2560 -291 40 ) ( 2559 -290 40 ) Checkered_128_OldSchoolJoker -87 -63 0 1 1
+( 2631 -175 60 ) ( 2631 -174 60 ) ( 2632 -175 60 ) Checkered_128_OldSchoolJoker -87 -63 0 1 1
+( 2559 -207 60 ) ( 2559 -175 40 ) ( 2687 -175 40 ) Checkered_128_OldSchoolJoker -87 -63 0 1 1
+( 2631 -175 44 ) ( 2631 -175 45 ) ( 2631 -174 44 ) Checkered_128_OldSchoolJoker 63 0 0 1 1
+}
+// brush 10
+{
+( 2559 -307 4 ) ( 2559 -306 4 ) ( 2559 -307 5 ) Checkered_128_OldSchoolJoker 51 4 0 1 1
+( 2639 -315 4 ) ( 2639 -315 5 ) ( 2640 -315 4 ) Checkered_128_OldSchoolJoker -127 4 0 1 1
+( 2639 -307 4 ) ( 2640 -307 4 ) ( 2639 -306 4 ) Checkered_128_OldSchoolJoker -127 -51 0 1 1
+( 2703 -291 40 ) ( 2703 -290 40 ) ( 2704 -291 40 ) Checkered_128_OldSchoolJoker -127 -51 0 1 1
+( 2559 -131 28 ) ( 2687 -147 36 ) ( 2559 -147 36 ) Checkered_128_OldSchoolJoker -127 -51 0 1 1
+( 2703 -131 20 ) ( 2704 -131 20 ) ( 2703 -131 21 ) Checkered_128_OldSchoolJoker -127 4 0 1 1
+( 2631 -291 20 ) ( 2631 -291 21 ) ( 2631 -290 20 ) Checkered_128_OldSchoolJoker 51 4 0 1 1
+}
+// brush 11
+{
+( 240 -389 4 ) ( 240 -245 4 ) ( 240 -245 132 ) Map/Exterior/Tile_street_sidewalk 69 -12 0 1 1
+( -448 -581 -28 ) ( -448 -581 -27 ) ( -447 -581 -28 ) Map/Exterior/Tile_street_sidewalk 0 -12 0 1 1
+( -448 -261 -4 ) ( -447 -261 -4 ) ( -448 -260 -4 ) Map/Exterior/Tile_street_sidewalk 0 -5 0 1 1
+( -320 -133 8 ) ( -320 -132 8 ) ( -319 -133 8 ) Map/Exterior/Tile_street_sidewalk -112 -65 0 1 1
+( -320 187 4 ) ( -319 187 4 ) ( -320 187 5 ) Map/Exterior/Tile_street_sidewalk 0 -12 0 1 1
+( 336 -405 4 ) ( 336 -309 132 ) ( 336 -309 4 ) Map/Exterior/Tile_street_sidewalk 69 -12 0 1 1
+}
+// brush 12
+{
+( 144 187 4 ) ( 144 -581 4 ) ( 144 -581 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+( 144 -581 4 ) ( 240 -581 0 ) ( 240 -581 -4 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( 240 -581 -4 ) ( 240 187 -4 ) ( 144 187 -4 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( 240 187 -4 ) ( 240 187 0 ) ( 144 187 4 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( 144 187 4 ) ( 240 187 0 ) ( 240 -581 0 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( 240 -581 0 ) ( 240 187 0 ) ( 240 187 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+}
+// brush 13
+{
+( 0 187 6 ) ( 0 -581 6 ) ( 0 -581 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+( 0 -581 6 ) ( 144 -581 4 ) ( 144 -581 -4 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( 144 -581 -4 ) ( 144 187 -4 ) ( 0 187 -4 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( 144 187 -4 ) ( 144 187 4 ) ( 0 187 6 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( 0 187 6 ) ( 144 187 4 ) ( 144 -581 4 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( 144 -581 4 ) ( 144 187 4 ) ( 144 187 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+}
+// brush 14
+{
+( -144 187 4 ) ( -144 -581 4 ) ( -144 -581 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+( -144 187 4 ) ( 0 187 6 ) ( 0 -581 6 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( -144 -581 4 ) ( 0 -581 6 ) ( 0 -581 -4 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( 0 -581 -4 ) ( 0 187 -4 ) ( -144 187 -4 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( 0 187 -4 ) ( 0 187 6 ) ( -144 187 4 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( 0 -581 6 ) ( 0 187 6 ) ( 0 187 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+}
+// brush 15
+{
+( -240 187 0 ) ( -240 -581 0 ) ( -240 -581 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+( -240 187 0 ) ( -144 187 4 ) ( -144 -581 4 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( -240 -581 0 ) ( -144 -581 4 ) ( -144 -581 -4 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( -144 -581 -4 ) ( -144 187 -4 ) ( -240 187 -4 ) Map/Exterior/Tile_street_asphalt 0 -5 0 1 1
+( -144 187 -4 ) ( -144 187 4 ) ( -240 187 0 ) Map/Exterior/Tile_street_asphalt 0 -16 0 1 1
+( -144 -581 4 ) ( -144 187 4 ) ( -144 187 -4 ) Map/Exterior/Tile_street_asphalt 69 -16 0 1 1
+}
+// brush 16
+{
+( -384 187 12 ) ( -384 -581 12 ) ( -384 -581 -4 ) Map/Exterior/Tile_street_concrete 69 -12 0 1 1
+( -384 -581 12 ) ( -336 -581 8 ) ( -336 -581 -4 ) Map/Exterior/Tile_street_concrete 0 -12 0 1 1
+( -336 -581 -4 ) ( -336 187 -4 ) ( -384 187 -4 ) Map/Exterior/Tile_street_concrete 0 -5 0 1 1
+( -336 187 -4 ) ( -336 187 8 ) ( -384 187 12 ) Map/Exterior/Tile_street_concrete 0 -12 0 1 1
+( -384 187 12 ) ( -336 187 8 ) ( -336 -581 8 ) Map/Exterior/Tile_street_concrete 0 -5 0 1 1
+( -336 -581 8 ) ( -336 187 8 ) ( -336 187 -4 ) Map/Exterior/Tile_street_concrete 69 -12 0 1 1
+}
+// brush 17
+{
+( -336 -565 4 ) ( -336 -357 4 ) ( -336 -357 132 ) Map/Exterior/Tile_street_sidewalk 69 -12 0 1 1
+( -448 -581 -28 ) ( -448 -581 -27 ) ( -447 -581 -28 ) Map/Exterior/Tile_street_sidewalk 0 -12 0 1 1
+( -448 -261 -4 ) ( -447 -261 -4 ) ( -448 -260 -4 ) Map/Exterior/Tile_street_sidewalk 0 -5 0 1 1
+( -320 -133 8 ) ( -320 -132 8 ) ( -319 -133 8 ) Map/Exterior/Tile_street_sidewalk -11 -64 0 1 1
+( -320 187 4 ) ( -319 187 4 ) ( -320 187 5 ) Map/Exterior/Tile_street_sidewalk 0 -12 0 1 1
+( -240 -549 4 ) ( -240 -405 132 ) ( -240 -405 4 ) Map/Exterior/Tile_street_sidewalk 69 -12 0 1 1
+}
+// brush 18
+{
+( 336 187 8 ) ( 336 -581 8 ) ( 336 -581 -4 ) Map/Exterior/Tile_street_concrete 69 -12 0 1 1
+( 336 187 8 ) ( 384 187 12 ) ( 384 -581 12 ) Map/Exterior/Tile_street_concrete 0 -5 0 1 1
+( 336 -581 8 ) ( 384 -581 12 ) ( 384 -581 -4 ) Map/Exterior/Tile_street_concrete 0 -12 0 1 1
+( 384 -581 -4 ) ( 384 187 -4 ) ( 336 187 -4 ) Map/Exterior/Tile_street_concrete 0 -5 0 1 1
+( 384 187 -4 ) ( 384 187 12 ) ( 336 187 8 ) Map/Exterior/Tile_street_concrete 0 -12 0 1 1
+( 384 -581 12 ) ( 384 187 12 ) ( 384 187 -4 ) Map/Exterior/Tile_street_concrete 69 -12 0 1 1
+}
+// brush 19
+{
+( 0 -1216 -16 ) ( 0 -1215 -16 ) ( 0 -1216 -15 ) Checkered_128_OldSchoolJoker 0 -16 0 1 1
+( 0 -1216 -16 ) ( 0 -1216 -15 ) ( 1 -1216 -16 ) Checkered_128_OldSchoolJoker 0 -16 0 1 1
+( 0 -1216 -16 ) ( 1 -1216 -16 ) ( 0 -1215 -16 ) Checkered_128_OldSchoolJoker 0 0 0 1 1
+( 16 -896 0 ) ( 16 -895 0 ) ( 17 -896 0 ) Checkered_128_OldSchoolJoker 0 0 0 1 1
+( 16 -896 0 ) ( 17 -896 0 ) ( 16 -896 1 ) Checkered_128_OldSchoolJoker 0 -16 0 1 1
+( 16 -896 0 ) ( 16 -896 1 ) ( 16 -895 0 ) Checkered_128_OldSchoolJoker 0 -16 0 1 1
+}
+}

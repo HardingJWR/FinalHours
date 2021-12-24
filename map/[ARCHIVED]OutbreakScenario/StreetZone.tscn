@@ -1,0 +1,746 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://camera/CameraBarFollow.gd" type="Script" id=1]
+[ext_resource path="res://map/Room.gd" type="Script" id=2]
+[ext_resource path="res://entity/actor/player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://trigger/camera/trigger_camera.gd" type="Script" id=4]
+[ext_resource path="res://trigger/door/temp_trigger_exit.gd" type="Script" id=5]
+[ext_resource path="res://camera/CameraLookattemp.gd" type="Script" id=6]
+[ext_resource path="res://entity/interactable/PushableCar.tscn" type="PackedScene" id=7]
+
+[sub_resource type="CubeMesh" id=12]
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.152941, 0.152941, 0.152941, 1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+
+[sub_resource type="CubeMesh" id=15]
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 0.470588, 0.0627451, 0.462745, 1 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 0.266667, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_color = Color( 0.360784, 0.211765, 0.0196078, 1 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_color = Color( 0.133333, 0.164706, 0.180392, 1 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_color = Color( 0.0823529, 0.278431, 0.0862745, 1 )
+
+[sub_resource type="CubeMesh" id=21]
+
+[sub_resource type="SpatialMaterial" id=22]
+albedo_color = Color( 0.443137, 0.443137, 0.443137, 1 )
+
+[sub_resource type="CubeMesh" id=23]
+size = Vector3( 20, 10, 1 )
+
+[sub_resource type="SpatialMaterial" id=24]
+albedo_color = Color( 0.262745, 0.184314, 0.105882, 1 )
+
+[sub_resource type="CubeMesh" id=25]
+
+[sub_resource type="CubeMesh" id=26]
+
+[sub_resource type="SpatialMaterial" id=27]
+albedo_color = Color( 1, 0.560784, 0, 1 )
+
+[sub_resource type="CubeMesh" id=34]
+
+[sub_resource type="SpatialMaterial" id=35]
+albedo_color = Color( 0.486275, 0.486275, 0.486275, 1 )
+
+[sub_resource type="SpatialMaterial" id=36]
+albedo_color = Color( 0, 0.203922, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=32]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="BoxShape" id=33]
+
+[sub_resource type="BoxShape" id=38]
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 0.342751, 1, 1 )
+
+[sub_resource type="BoxShape" id=37]
+
+[sub_resource type="BoxShape" id=11]
+
+[node name="Room" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -95 )
+
+[node name="Geometry" type="Spatial" parent="."]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
+
+[node name="Mesh" type="Spatial" parent="Geometry"]
+
+[node name="Street" type="Spatial" parent="Geometry/Mesh"]
+
+[node name="MeshInstance" type="MeshInstance" parent="Geometry/Mesh/Street"]
+transform = Transform( 4, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, -0.1, 0 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 13 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Street"]
+transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, -0.1, -54 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 13 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Street"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 4, -26, -0.1, -4 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 13 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Street"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 4, 26, -0.1, -4 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 13 )
+
+[node name="SideWalk" type="Spatial" parent="Geometry/Mesh"]
+
+[node name="MeshInstance" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 4, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, -0.1, 0 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 13 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, -0.1, -54 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 13 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 4, -26, -0.1, -4 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 13 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 1, 26, 0, 1 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 1, 26, 0, -9 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance11" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 1, 0, 0, 0, 0.1, 0, 0, 0, 19, 5, 0, -29 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance12" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 1, 0, 0, 0, 0.1, 0, 0, 0, 19, -5, 0, -29 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance13" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 1, 0, 0, 0, 0.1, 0, 0, 0, 25, 5, 0, 27 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance14" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 1, 0, 0, 0, 0.1, 0, 0, 0, 25, -5, 0, 27 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 1, 26, 0, -49 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance8" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 1, -26, 0, -49 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance9" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 1, -26, 0, -9 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance10" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 22, 0, 0, 0, 0.1, 0, 0, 0, 1, -26, 0, 1 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="Geometry/Mesh/SideWalk"]
+transform = Transform( 50, 0, 0, 0, 0.1, 0, 0, 0, 1, 0, 0, -59 )
+mesh = SubResource( 12 )
+material/0 = SubResource( 14 )
+
+[node name="Buildings" type="Spatial" parent="Geometry/Mesh"]
+
+[node name="MeshInstance" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, -16, 5, 12 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 16 )
+
+[node name="MeshInstance9" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 9, -16, 5, -39 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 16 )
+
+[node name="MeshInstance10" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 9, -36, 5, -39 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 17 )
+
+[node name="MeshInstance11" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 9, 16, 5, -39 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 17 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, -36, 5, 12 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 18 )
+
+[node name="MeshInstance13" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, 16, 5, -20 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 18 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, 30, 5, -70 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 16 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, 10, 5, -70 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 18 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, -10.3333, 5, -70 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 19 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, -16, 5, -20 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 19 )
+
+[node name="MeshInstance16" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, 36, 5, -20 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 19 )
+
+[node name="MeshInstance17" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, 36, 5, -37.6667 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 19 )
+
+[node name="MeshInstance12" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, 16, 5, 32 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 19 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, -16, 5, 32 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 20 )
+
+[node name="MeshInstance14" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 36, 5, 12 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 20 )
+
+[node name="MeshInstance8" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, -35.769, 5, -19.83 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 20 )
+
+[node name="MeshInstance15" type="MeshInstance" parent="Geometry/Mesh/Buildings"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 10, -30.5, 5, -70.163 )
+mesh = SubResource( 15 )
+material/0 = SubResource( 20 )
+
+[node name="Props" type="Spatial" parent="Geometry/Mesh"]
+
+[node name="MeshInstance" type="MeshInstance" parent="Geometry/Mesh/Props"]
+transform = Transform( 10, 0, 0, 0, 3, 0, 0, 0, 1, 0, 2.33333, 39 )
+mesh = SubResource( 21 )
+material/0 = SubResource( 22 )
+
+[node name="Bar" type="Spatial" parent="Geometry/Mesh"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 14 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Geometry/Mesh/Bar"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5, -11.6667 )
+mesh = SubResource( 23 )
+material/0 = SubResource( 24 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Bar"]
+transform = Transform( 1, 0, 0, 0, 5, 0, 0, 0, 5, -10, 5, -6.2 )
+mesh = SubResource( 25 )
+material/0 = SubResource( 24 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Bar"]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 4.5, -10, 6, 3.33024 )
+mesh = SubResource( 25 )
+material/0 = SubResource( 24 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Bar"]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 4.5, -10, -4, 3.33024 )
+mesh = SubResource( 25 )
+material/0 = SubResource( 24 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="Geometry/Mesh/Bar"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 4, -10, 1, 3.90913 )
+mesh = SubResource( 25 )
+material/0 = SubResource( 24 )
+
+[node name="Door" type="MeshInstance" parent="Geometry/Mesh/Bar"]
+transform = Transform( -2.18557e-08, 0, 0.1, 0, 0.75, 0, -0.5, 0, -4.37114e-09, -10.9856, 0.844164, -0.645456 )
+mesh = SubResource( 26 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 27 )
+
+[node name="Car" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.0523535, 0, 1.99726, 0, 0.3, 0, -0.998629, 0, -0.104707, 4.14447, 0.672409, -49.2173 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car2" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.369212, 0, 1.85869, 0, 0.3, 0, -0.929345, 0, -0.738423, -5.13838, 0.672409, -49.8228 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car2"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car2"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car4" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.0523535, 0, 1.99726, 0, 0.3, 0, -0.998629, 0, -0.104707, 3.62244, 0.672409, -23.7755 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car4"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car4"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car6" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.0523535, 0, 1.99726, 0, 0.3, 0, -0.998629, 0, -0.104707, -3.5951, 0.672409, -10.8326 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car6"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car6"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car7" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( 0.0247287, 0, 1.99939, 0, 0.3, 0, -0.999695, 0, 0.0494576, -0.830467, 0.672409, -13.1691 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car7"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car7"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car8" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.999852, 0, -0.0344862, 0, 0.3, 0, 0.0172431, 0, -1.99971, 4.53249, 0.672409, -18.3182 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car8"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car8"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car9" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.0681547, 0, 1.99535, 0, 0.3, 0, -0.997675, 0, -0.136309, 0.803183, 0.672409, -9.24389 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car9"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car9"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car5" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.369212, 0, 1.85869, 0, 0.3, 0, -0.929345, 0, -0.738423, -3.61097, 0.672409, -24.3811 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car5"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car5"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Car3" type="MeshInstance" parent="Geometry/Mesh"]
+transform = Transform( -0.0462697, 0, 1.99786, 0, 0.3, 0, -0.998929, 0, -0.0925394, -0.297053, 0.672409, -49.2605 )
+mesh = SubResource( 34 )
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Geometry/Mesh/Car3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 1.8869, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 35 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Geometry/Mesh/Car3"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0.50827, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 36 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Geometry/Mesh/Car3"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.1, -0.569252, 3.31391, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 32 )
+
+[node name="Ground" type="StaticBody" parent="Geometry"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.007, 0, -0.023 )
+collision_layer = 16
+collision_mask = 0
+
+[node name="Street" type="CollisionShape" parent="Geometry/Ground"]
+transform = Transform( 30, 0, 0, 0, 0.1, 0, 0, 0, 30, 4.461, -0.1, -18.911 )
+shape = SubResource( 33 )
+
+[node name="Street2" type="CollisionShape" parent="Geometry/Ground"]
+transform = Transform( 20, 0, 0, 0, 0.1, 0, 0, 0, 20, 23.992, 0, -27.964 )
+shape = SubResource( 33 )
+
+[node name="Street3" type="CollisionShape" parent="Geometry/Ground"]
+transform = Transform( 20, 0, 0, 0, 0.1, 0, 0, 0, 20, -24.008, 0, -27.964 )
+shape = SubResource( 33 )
+
+[node name="Street4" type="CollisionShape" parent="Geometry/Ground"]
+transform = Transform( 20, 0, 0, 0, 0.1, 0, 0, 0, 20, 23.992, 0, 20.036 )
+shape = SubResource( 33 )
+
+[node name="Street5" type="CollisionShape" parent="Geometry/Ground"]
+transform = Transform( 20, 0, 0, 0, 0.1, 0, 0, 0, 20, -24.008, 0, 20.036 )
+shape = SubResource( 33 )
+
+[node name="Environment" type="StaticBody" parent="Geometry"]
+collision_layer = 32
+collision_mask = 0
+
+[node name="Boundaries" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 25, 0, 0, 0, 5, 0, 0, 0, 25, 31, 0, -35 )
+shape = SubResource( 38 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 25, 0, 0, 0, 5, 0, 0, 0, 25, -31, 0, -35 )
+shape = SubResource( 38 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 25, 0, 0, 0, 5, 0, 0, 0, 25, 31, 0, 26.8242 )
+shape = SubResource( 38 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 25, 0, 0, 0, 5, 0, 0, 0, 25, -31, 0, 26.8242 )
+shape = SubResource( 38 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 10, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, -48.9298 )
+shape = SubResource( 38 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 1, 0, 0, 0, 3, 0, 0, 0, 10, -44.6667, 3, -3.66667 )
+shape = SubResource( 38 )
+
+[node name="Boundaries2" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 1, 0, 0, 0, 3, 0, 0, 0, 10, 44.6667, 3, -3.66667 )
+shape = SubResource( 38 )
+
+[node name="Props" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 1.99692, 0, 0.0554556, 0, 1, 0, -0.110911, 0, 0.998461, 0.777088, 0.336303, -9.25007 )
+shape = SubResource( 38 )
+
+[node name="Props2" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 1.99692, 0, 0.0554556, 0, 1, 0, -0.110911, 0, 0.998461, -3.60718, 0.336303, -10.8954 )
+shape = SubResource( 38 )
+
+[node name="Props3" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 1.9999, 0, -0.0101576, 0, 1, 0, 0.0203153, 0, 0.999948, -0.767446, 0.336303, -13.181 )
+shape = SubResource( 38 )
+
+[node name="Props4" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 1.84464, 0, 0.386421, 0, 1, 0, -0.772842, 0, 0.922322, -3.6605, 0.336303, -24.392 )
+shape = SubResource( 38 )
+
+[node name="Props5" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( 1.99367, 0, 0.0794856, 0, 1, 0, -0.158971, 0, 0.996836, 3.64425, 0.336303, -23.8155 )
+shape = SubResource( 38 )
+
+[node name="Props6" type="CollisionShape" parent="Geometry/Environment"]
+transform = Transform( -8.74228e-08, 0, 1, 0, 1, 0, -2, 0, -4.37114e-08, 4.53177, 0.336303, -18.3324 )
+shape = SubResource( 38 )
+
+[node name="Light" type="Spatial" parent="."]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Light"]
+transform = Transform( 0.707107, -0.353553, 0.612372, 0, 0.866025, 0.5, -0.707107, -0.353553, 0.612372, 0, 5, 0 )
+light_energy = 0.5
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="Light"]
+transform = Transform( -0.707107, 0.353553, -0.612373, 0, 0.866026, 0.5, 0.707107, 0.353553, -0.612373, 0, 5, 0 )
+light_energy = 0.5
+
+[node name="Spawn" type="Spatial" parent="."]
+
+[node name="00" type="Position3D" parent="Spawn"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52671, 2.09094, -95.2873 )
+
+[node name="01" type="Position3D" parent="Spawn"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -95 )
+
+[node name="02" type="Position3D" parent="Spawn"]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 16.4499, 0, 39.7526 )
+
+[node name="Trigger" type="Spatial" parent="."]
+
+[node name="Cameras" type="Spatial" parent="Trigger"]
+
+[node name="trigger_camera" type="Spatial" parent="Trigger/Cameras"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 171 )
+script = ExtResource( 4 )
+IN_Camera_NP = NodePath("Camera")
+OUT_Camera_NP = NodePath("Camera2")
+
+[node name="Area" type="Area" parent="Trigger/Cameras/trigger_camera"]
+collision_mask = 64
+
+[node name="CollisionShape" type="CollisionShape" parent="Trigger/Cameras/trigger_camera/Area"]
+transform = Transform( 15, 0, 0, 0, 2, 0, 0, 0, 4, 0, 0, 0 )
+shape = SubResource( 9 )
+
+[node name="Camera" type="Camera" parent="Trigger/Cameras/trigger_camera"]
+transform = Transform( 0.931554, 0.208319, -0.298013, 0, 0.819607, 0.572927, 0.363605, -0.533712, 0.763507, -14.7812, 32.7598, -120.089 )
+
+[node name="Camera2" type="Camera" parent="Trigger/Cameras/trigger_camera"]
+transform = Transform( 0.931553, 0.208319, -0.298013, 0, 0.819607, 0.572927, 0.363605, -0.533712, 0.763507, -14.7812, 32.7598, -120.089 )
+script = ExtResource( 6 )
+
+[node name="trigger_camera2" type="Spatial" parent="Trigger/Cameras"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.644689, 0, -93.5518 )
+script = ExtResource( 4 )
+IN_Camera_NP = NodePath("Camera")
+
+[node name="Area" type="Area" parent="Trigger/Cameras/trigger_camera2"]
+collision_mask = 64
+
+[node name="CollisionShape" type="CollisionShape" parent="Trigger/Cameras/trigger_camera2/Area"]
+transform = Transform( 18, 0, 0, 0, 3, 0, 0, 0, 3, 0, 3, -2.02297 )
+shape = SubResource( 37 )
+
+[node name="Camera" type="Camera" parent="Trigger/Cameras/trigger_camera2"]
+transform = Transform( -1, 6.18173e-08, -6.18173e-08, 0, 0.707107, 0.707107, 8.74228e-08, 0.707107, -0.707107, 1, 13, -15.726 )
+script = ExtResource( 1 )
+freezeX = true
+freezeY = true
+distanceZ = 80.0
+
+[node name="trigger_camera3" type="Spatial" parent="Trigger/Cameras"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6447, 0, 39.8918 )
+script = ExtResource( 4 )
+IN_Camera_NP = NodePath("Camera")
+OUT_Camera_NP = NodePath("../trigger_camera2/Camera")
+
+[node name="Area" type="Area" parent="Trigger/Cameras/trigger_camera3"]
+collision_layer = 0
+collision_mask = 64
+
+[node name="CollisionShape" type="CollisionShape" parent="Trigger/Cameras/trigger_camera3/Area"]
+transform = Transform( 5, 0, 0, 0, 2, 0, 0, 0, 5, 0, 0, 0 )
+shape = SubResource( 37 )
+
+[node name="Camera" type="Camera" parent="Trigger/Cameras/trigger_camera3"]
+transform = Transform( -0.00120213, 0.554909, -0.83191, 0, 0.831911, 0.554909, 0.999999, 0.000667071, -0.00100006, -10.4667, 10.9662, 0.259853 )
+
+[node name="trigger_camera4" type="Spatial" parent="Trigger/Cameras"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.355311, 0, 95.8918 )
+script = ExtResource( 4 )
+IN_Camera_NP = NodePath("Camera")
+OUT_Camera_NP = NodePath("../trigger_camera2/Camera")
+
+[node name="Area" type="Area" parent="Trigger/Cameras/trigger_camera4"]
+collision_mask = 64
+
+[node name="CollisionShape" type="CollisionShape" parent="Trigger/Cameras/trigger_camera4/Area"]
+transform = Transform( 20, 0, 0, 0, 2, 0, 0, 0, 5, 0, 0, 0 )
+shape = SubResource( 37 )
+
+[node name="Camera" type="Camera" parent="Trigger/Cameras/trigger_camera4"]
+transform = Transform( -0.999995, 0.00176422, -0.00259553, 0, 0.827036, 0.562149, 0.00313835, 0.562146, -0.827032, 0.87239, 20.3929, -16.6715 )
+
+[node name="trigger_camera5" type="Spatial" parent="Trigger/Cameras"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.644689, 0, -129.552 )
+script = ExtResource( 4 )
+IN_Camera_NP = NodePath("Camera")
+OUT_Camera_NP = NodePath("../trigger_camera2/Camera")
+
+[node name="Area" type="Area" parent="Trigger/Cameras/trigger_camera5"]
+collision_mask = 64
+
+[node name="CollisionShape" type="CollisionShape" parent="Trigger/Cameras/trigger_camera5/Area"]
+transform = Transform( 18, 0, 0, 0, 2, 0, 0, 0, 10, 0, 0, -4.02296 )
+shape = SubResource( 37 )
+
+[node name="Camera" type="Camera" parent="Trigger/Cameras/trigger_camera5"]
+transform = Transform( 0.999689, -0.00717324, 0.0239027, 0, 0.9578, 0.287437, -0.0249559, -0.287348, 0.957501, -0.169474, 16.8622, 22.6388 )
+script = ExtResource( 6 )
+
+[node name="Exit" type="Spatial" parent="Trigger"]
+
+[node name="trigger_exit" type="Spatial" parent="Trigger/Exit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.107, 0, 39.9472 )
+script = ExtResource( 5 )
+destination = "res://scene/area/OutbreakScenario/Bar.tscn"
+entranceID = "01"
+
+[node name="Area" type="Area" parent="Trigger/Exit/trigger_exit"]
+collision_layer = 0
+collision_mask = 64
+
+[node name="CollisionShape" type="CollisionShape" parent="Trigger/Exit/trigger_exit/Area"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 11 )
+
+[node name="Pushable" type="Spatial" parent="."]
+
+[node name="PushableCar" parent="Pushable" instance=ExtResource( 7 )]
+transform = Transform( 1.75, 0, 0, 0, 1, 0, 0, 0, 2, 0.69516, 0, -78 )
+
+[node name="PushableCar2" parent="Pushable" instance=ExtResource( 7 )]
+transform = Transform( 1.75, 0, 0, 0, 1, 0, 0, 0, 2, 7.16215, 0, -49 )
+
+[connection signal="body_entered" from="Trigger/Cameras/trigger_camera/Area" to="Trigger/Cameras/trigger_camera" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Trigger/Cameras/trigger_camera/Area" to="Trigger/Cameras/trigger_camera" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Trigger/Cameras/trigger_camera2/Area" to="Trigger/Cameras/trigger_camera2" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Trigger/Cameras/trigger_camera2/Area" to="Trigger/Cameras/trigger_camera2" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Trigger/Cameras/trigger_camera3/Area" to="Trigger/Cameras/trigger_camera3" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Trigger/Cameras/trigger_camera3/Area" to="Trigger/Cameras/trigger_camera3" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Trigger/Cameras/trigger_camera4/Area" to="Trigger/Cameras/trigger_camera4" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Trigger/Cameras/trigger_camera4/Area" to="Trigger/Cameras/trigger_camera4" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Trigger/Cameras/trigger_camera5/Area" to="Trigger/Cameras/trigger_camera5" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Trigger/Cameras/trigger_camera5/Area" to="Trigger/Cameras/trigger_camera5" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="Trigger/Exit/trigger_exit/Area" to="Trigger/Exit/trigger_exit" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Trigger/Exit/trigger_exit/Area" to="Trigger/Exit/trigger_exit" method="_on_Area_body_exited"]

@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/FullDownTown.20.map-ebce818710fed65e9298904633ea245b.tres"
+
+[deps]
+
+source_file="res://map/FullDownTown/autosave/FullDownTown.20.map"
+dest_files=[ "res://.import/FullDownTown.20.map-ebce818710fed65e9298904633ea245b.tres" ]
+
+[params]
+

@@ -1,0 +1,149 @@
+// Game: Qodot_Final_Hours
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures"
+// brush 0
+{
+( -32 -128 0 ) ( -32 -127 0 ) ( -32 -128 1 ) Template_Checkered_256_Green 0 0 0 1 1
+( -448 -768 0 ) ( -448 -768 1 ) ( -447 -768 0 ) Template_Checkered_256_Green 0 0 0 1 1
+( -448 -128 0 ) ( -447 -128 0 ) ( -448 -127 0 ) Template_Checkered_256_Green 0 0 0 1 1
+( -320 0 256 ) ( -320 1 256 ) ( -319 0 256 ) Template_Checkered_256_Green 0 0 0 1 1
+( -320 0 32 ) ( -319 0 32 ) ( -320 0 33 ) Template_Checkered_256_Green 0 0 0 1 1
+( 0 0 32 ) ( 0 0 33 ) ( 0 1 32 ) Template_Checkered_256_Green 0 0 0 1 1
+}
+// brush 1
+{
+( 768 -128 0 ) ( 768 -127 0 ) ( 768 -128 1 ) Template_Checkered_256_Orange 0 0 0 -1 1
+( 352 -768 0 ) ( 352 -768 1 ) ( 353 -768 0 ) Template_Checkered_256_Orange 0 0 0 -1 1
+( 352 -128 0 ) ( 353 -128 0 ) ( 352 -127 0 ) Template_Checkered_256_Orange 0 0 0 -1 1
+( 480 0 256 ) ( 480 1 256 ) ( 481 0 256 ) Template_Checkered_256_Orange 0 0 0 -1 1
+( 480 0 32 ) ( 481 0 32 ) ( 480 0 33 ) Template_Checkered_256_Orange 0 0 0 -1 1
+( 800 0 32 ) ( 800 0 33 ) ( 800 1 32 ) Template_Checkered_256_Orange 0 0 0 -1 1
+}
+// brush 2
+{
+( 0 0 64 ) ( 0 1 64 ) ( 0 0 65 ) Template_Checkered_256_PaleBlue 0 0 0 1 1
+( 0 0 64 ) ( 0 0 65 ) ( 1 0 64 ) Template_Checkered_256_PaleBlue 0 0 0 1 1
+( 0 0 0 ) ( 1 0 0 ) ( 0 1 0 ) Template_Checkered_256_PaleBlue 0 0 0 1 1
+( 704 32 256 ) ( 704 33 256 ) ( 705 32 256 ) Template_Checkered_256_PaleBlue 0 0 0 1 1
+( 704 32 96 ) ( 705 32 96 ) ( 704 32 97 ) Template_Checkered_256_PaleBlue 0 0 0 1 1
+( 768 32 96 ) ( 768 32 97 ) ( 768 33 96 ) Template_Checkered_256_PaleBlue 0 0 0 1 1
+}
+// brush 3
+{
+( 0 -800 64 ) ( 0 -799 64 ) ( 0 -800 65 ) Template_Checkered_256_Red 0 0 0 1 1
+( 0 -1280 64 ) ( 0 -1280 65 ) ( 1 -1280 64 ) Template_Checkered_256_Red 0 0 0 1 1
+( 0 -800 0 ) ( 1 -800 0 ) ( 0 -799 0 ) Template_Checkered_256_Red 0 0 0 1 1
+( 704 -768 256 ) ( 704 -767 256 ) ( 705 -768 256 ) Template_Checkered_256_Red 0 0 0 1 1
+( 704 -768 96 ) ( 705 -768 96 ) ( 704 -768 97 ) Template_Checkered_256_Red 0 0 0 -1 1
+( 256 -768 0 ) ( 256 -800 256 ) ( 256 -768 256 ) Template_Checkered_256_Red 0 0 0 1 1
+}
+// brush 4
+{
+( 512 -800 256 ) ( 512 -800 0 ) ( 512 -672 0 ) Template_Checkered_256_Red 0 0 0 1 1
+( 0 -1280 64 ) ( 0 -1280 65 ) ( 1 -1280 64 ) Template_Checkered_256_Red 0 0 0 1 1
+( 0 -800 0 ) ( 1 -800 0 ) ( 0 -799 0 ) Template_Checkered_256_Red 0 0 0 1 1
+( 704 -768 256 ) ( 704 -767 256 ) ( 705 -768 256 ) Template_Checkered_256_Red 0 0 0 1 1
+( 704 -768 96 ) ( 705 -768 96 ) ( 704 -768 97 ) Template_Checkered_256_Red 0 0 0 -1 1
+( 768 -768 96 ) ( 768 -768 97 ) ( 768 -767 96 ) Template_Checkered_256_Red 0 0 0 1 1
+}
+// brush 5
+{
+( 768 -1408 0 ) ( 768 -1407 0 ) ( 768 -1408 1 ) Template_Checkered_256_PaleBlue 0 0 0 -1 1
+( 352 -2048 0 ) ( 352 -2048 1 ) ( 353 -2048 0 ) Template_Checkered_256_PaleBlue 0 0 0 -1 1
+( 352 -1408 0 ) ( 353 -1408 0 ) ( 352 -1407 0 ) Template_Checkered_256_PaleBlue 0 0 0 -1 1
+( 480 -1280 256 ) ( 480 -1279 256 ) ( 481 -1280 256 ) Template_Checkered_256_PaleBlue 0 0 0 -1 1
+( 480 -1280 32 ) ( 481 -1280 32 ) ( 480 -1280 33 ) Template_Checkered_256_PaleBlue 0 0 0 -1 1
+( 800 -1280 32 ) ( 800 -1280 33 ) ( 800 -1279 32 ) Template_Checkered_256_PaleBlue 0 0 0 -1 1
+}
+// brush 6
+{
+( -32 -1408 0 ) ( -32 -1407 0 ) ( -32 -1408 1 ) Template_Checkered_256_Blue 0 0 0 1 1
+( -448 -2048 0 ) ( -448 -2048 1 ) ( -447 -2048 0 ) Template_Checkered_256_Blue 0 0 0 1 1
+( -448 -1408 0 ) ( -447 -1408 0 ) ( -448 -1407 0 ) Template_Checkered_256_Blue 0 0 0 1 1
+( -320 -1280 256 ) ( -320 -1279 256 ) ( -319 -1280 256 ) Template_Checkered_256_Blue 0 0 0 1 1
+( -320 -1280 32 ) ( -319 -1280 32 ) ( -320 -1280 33 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 0 -1280 32 ) ( 0 -1280 33 ) ( 0 -1279 32 ) Template_Checkered_256_Blue 0 0 0 1 1
+}
+// brush 7
+{
+( 0 -2080 64 ) ( 0 -2079 64 ) ( 0 -2080 65 ) Template_Checkered_256_Orange 0 0 0 1 1
+( 0 -2080 64 ) ( 0 -2080 65 ) ( 1 -2080 64 ) Template_Checkered_256_Orange 0 0 0 1 1
+( 0 -2080 0 ) ( 1 -2080 0 ) ( 0 -2079 0 ) Template_Checkered_256_Orange 0 0 0 1 1
+( 704 -2048 256 ) ( 704 -2047 256 ) ( 705 -2048 256 ) Template_Checkered_256_Orange 0 0 0 1 1
+( 704 -2048 96 ) ( 705 -2048 96 ) ( 704 -2048 97 ) Template_Checkered_256_Orange 0 0 0 1 1
+( 768 -2048 96 ) ( 768 -2048 97 ) ( 768 -2047 96 ) Template_Checkered_256_Orange 0 0 0 1 1
+}
+}
+// entity 1
+{
+"classname" "func_group"
+"_tb_type" "_tb_layer"
+"_tb_name" "Ceilings"
+"_tb_id" "1"
+"_tb_layer_sort_index" "0"
+// brush 0
+{
+( 0 -128 256 ) ( 0 -127 256 ) ( 0 -128 257 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 0 -768 256 ) ( 0 -768 257 ) ( 1 -768 256 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 0 -128 256 ) ( 1 -128 256 ) ( 0 -127 256 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 128 0 288 ) ( 128 1 288 ) ( 129 0 288 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 128 0 288 ) ( 129 0 288 ) ( 128 0 289 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 768 0 288 ) ( 768 0 289 ) ( 768 1 288 ) Template_Checkered_256_Blue 0 0 0 1 1
+}
+// brush 1
+{
+( 256 -864 256 ) ( 256 -863 256 ) ( 256 -864 257 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 256 -1280 256 ) ( 256 -1280 257 ) ( 257 -1280 256 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 256 -864 256 ) ( 257 -864 256 ) ( 256 -863 256 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 512 -768 288 ) ( 512 -767 288 ) ( 513 -768 288 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 512 -768 288 ) ( 513 -768 288 ) ( 512 -768 289 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 512 -768 288 ) ( 512 -768 289 ) ( 512 -767 288 ) Template_Checkered_256_Yellow 0 0 0 1 1
+}
+// brush 2
+{
+( 0 -1408 256 ) ( 0 -1407 256 ) ( 0 -1408 257 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 0 -2048 256 ) ( 0 -2048 257 ) ( 1 -2048 256 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 0 -1408 256 ) ( 1 -1408 256 ) ( 0 -1407 256 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 128 -1280 288 ) ( 128 -1279 288 ) ( 129 -1280 288 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 128 -1280 288 ) ( 129 -1280 288 ) ( 128 -1280 289 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 768 -1280 288 ) ( 768 -1280 289 ) ( 768 -1279 288 ) Template_Checkered_256_Purple 0 0 0 1 1
+}
+}
+// entity 2
+{
+"classname" "func_group"
+"_tb_type" "_tb_layer"
+"_tb_name" "Floor"
+"_tb_id" "2"
+"_tb_layer_sort_index" "1"
+// brush 0
+{
+( 0 -128 -32 ) ( 0 -127 -32 ) ( 0 -128 -31 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 0 -768 -32 ) ( 0 -768 -31 ) ( 1 -768 -32 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 0 -128 -32 ) ( 1 -128 -32 ) ( 0 -127 -32 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 128 0 0 ) ( 128 1 0 ) ( 129 0 0 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 128 0 0 ) ( 129 0 0 ) ( 128 0 1 ) Template_Checkered_256_Blue 0 0 0 1 1
+( 768 0 0 ) ( 768 0 1 ) ( 768 1 0 ) Template_Checkered_256_Blue 0 0 0 1 1
+}
+// brush 1
+{
+( 256 -864 -32 ) ( 256 -863 -32 ) ( 256 -864 -31 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 256 -1280 -32 ) ( 256 -1280 -31 ) ( 257 -1280 -32 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 256 -864 -32 ) ( 257 -864 -32 ) ( 256 -863 -32 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 512 -768 0 ) ( 512 -767 0 ) ( 513 -768 0 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 512 -768 0 ) ( 513 -768 0 ) ( 512 -768 1 ) Template_Checkered_256_Yellow 0 0 0 1 1
+( 512 -768 0 ) ( 512 -768 1 ) ( 512 -767 0 ) Template_Checkered_256_Yellow 0 0 0 1 1
+}
+// brush 2
+{
+( 0 -1408 -32 ) ( 0 -1407 -32 ) ( 0 -1408 -31 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 0 -2048 -32 ) ( 0 -2048 -31 ) ( 1 -2048 -32 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 0 -1408 -32 ) ( 1 -1408 -32 ) ( 0 -1407 -32 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 128 -1280 0 ) ( 128 -1279 0 ) ( 129 -1280 0 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 128 -1280 0 ) ( 129 -1280 0 ) ( 128 -1280 1 ) Template_Checkered_256_Purple 0 0 0 1 1
+( 768 -1280 0 ) ( 768 -1280 1 ) ( 768 -1279 0 ) Template_Checkered_256_Purple 0 0 0 1 1
+}
+}

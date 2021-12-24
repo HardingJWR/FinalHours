@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/ApartmentComplex.map-1f095b7a94cdf10da181f6197852bbab.tres"
+
+[deps]
+
+source_file="res://map/Apartment Complex/ApartmentComplex.map"
+dest_files=[ "res://.import/ApartmentComplex.map-1f095b7a94cdf10da181f6197852bbab.tres" ]
+
+[params]
+

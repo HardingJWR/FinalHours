@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/CompleteArea.map-815799b902d1beadbe4c450889e10afc.tres"
+
+[deps]
+
+source_file="res://map/UnderConstructionBuilding/CompleteArea.map"
+dest_files=[ "res://.import/CompleteArea.map-815799b902d1beadbe4c450889e10afc.tres" ]
+
+[params]
+

@@ -1,0 +1,180 @@
+// Game: Qodot_Final_Hours
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_mod" "textures"
+"_tb_textures" "textures;textures/Map/Exterior"
+// brush 0
+{
+( 336 384 8 ) ( 336 -384 8 ) ( 336 -384 -4 ) StreetsTemplate 0 -12 0 1 1
+( 336 384 8 ) ( 384 384 12 ) ( 384 -384 12 ) StreetsTemplate 384 0 0 1 1
+( 336 -384 8 ) ( 384 -384 12 ) ( 384 -384 -4 ) StreetsTemplate 384 -12 0 1 1
+( 384 -384 -4 ) ( 384 384 -4 ) ( 336 384 -4 ) StreetsTemplate 384 0 0 1 1
+( 384 384 -4 ) ( 384 384 12 ) ( 336 384 8 ) StreetsTemplate 384 -12 0 1 1
+( 384 -384 12 ) ( 384 384 12 ) ( 384 384 -4 ) StreetsTemplate 0 -12 0 1 1
+}
+// brush 1
+{
+( 240 -192 4 ) ( 240 -48 4 ) ( 240 -48 132 ) StreetsTemplate 0 -12 0 1 1
+( -448 -384 -28 ) ( -448 -384 -27 ) ( -447 -384 -28 ) StreetsTemplate 384 -12 0 1 1
+( -448 -64 -4 ) ( -447 -64 -4 ) ( -448 -63 -4 ) StreetsTemplate 384 0 0 1 1
+( -320 64 8 ) ( -320 65 8 ) ( -319 64 8 ) StreetsTemplate 384 0 0 1 1
+( -320 384 4 ) ( -319 384 4 ) ( -320 384 5 ) StreetsTemplate 384 -12 0 1 1
+( 336 -208 4 ) ( 336 -112 132 ) ( 336 -112 4 ) StreetsTemplate 0 -12 0 1 1
+}
+// brush 2
+{
+( 144 384 4 ) ( 144 -384 4 ) ( 144 -384 -4 ) StreetsTemplate 0 -16 0 1 1
+( 144 -384 4 ) ( 240 -384 0 ) ( 240 -384 -4 ) StreetsTemplate 384 -16 0 1 1
+( 240 -384 -4 ) ( 240 384 -4 ) ( 144 384 -4 ) StreetsTemplate 384 0 0 1 1
+( 240 384 -4 ) ( 240 384 0 ) ( 144 384 4 ) StreetsTemplate 384 -16 0 1 1
+( 144 384 4 ) ( 240 384 0 ) ( 240 -384 0 ) StreetsTemplate 384 0 0 1 1
+( 240 -384 0 ) ( 240 384 0 ) ( 240 384 -4 ) StreetsTemplate 0 -16 0 1 1
+}
+// brush 3
+{
+( 0 384 6 ) ( 0 -384 6 ) ( 0 -384 -4 ) StreetsTemplate 0 -16 0 1 1
+( 0 -384 6 ) ( 144 -384 4 ) ( 144 -384 -4 ) StreetsTemplate 384 -16 0 1 1
+( 144 -384 -4 ) ( 144 384 -4 ) ( 0 384 -4 ) StreetsTemplate 384 0 0 1 1
+( 144 384 -4 ) ( 144 384 4 ) ( 0 384 6 ) StreetsTemplate 384 -16 0 1 1
+( 0 384 6 ) ( 144 384 4 ) ( 144 -384 4 ) StreetsTemplate 384 0 0 1 1
+( 144 -384 4 ) ( 144 384 4 ) ( 144 384 -4 ) StreetsTemplate 0 -16 0 1 1
+}
+// brush 4
+{
+( -144 384 4 ) ( -144 -384 4 ) ( -144 -384 -4 ) StreetsTemplate 0 -16 0 1 1
+( -144 384 4 ) ( 0 384 6 ) ( 0 -384 6 ) StreetsTemplate 384 0 0 1 1
+( -144 -384 4 ) ( 0 -384 6 ) ( 0 -384 -4 ) StreetsTemplate 384 -16 0 1 1
+( 0 -384 -4 ) ( 0 384 -4 ) ( -144 384 -4 ) StreetsTemplate 384 0 0 1 1
+( 0 384 -4 ) ( 0 384 6 ) ( -144 384 4 ) StreetsTemplate 384 -16 0 1 1
+( 0 -384 6 ) ( 0 384 6 ) ( 0 384 -4 ) StreetsTemplate 0 -16 0 1 1
+}
+// brush 5
+{
+( -240 384 0 ) ( -240 -384 0 ) ( -240 -384 -4 ) StreetsTemplate 0 -16 0 1 1
+( -240 384 0 ) ( -144 384 4 ) ( -144 -384 4 ) StreetsTemplate 384 0 0 1 1
+( -240 -384 0 ) ( -144 -384 4 ) ( -144 -384 -4 ) StreetsTemplate 384 -16 0 1 1
+( -144 -384 -4 ) ( -144 384 -4 ) ( -240 384 -4 ) StreetsTemplate 384 0 0 1 1
+( -144 384 -4 ) ( -144 384 4 ) ( -240 384 0 ) StreetsTemplate 384 -16 0 1 1
+( -144 -384 4 ) ( -144 384 4 ) ( -144 384 -4 ) StreetsTemplate 0 -16 0 1 1
+}
+// brush 6
+{
+( -336 -368 4 ) ( -336 -160 4 ) ( -336 -160 132 ) StreetsTemplate 0 -12 0 1 1
+( -448 -384 -28 ) ( -448 -384 -27 ) ( -447 -384 -28 ) StreetsTemplate 384 -12 0 1 1
+( -448 -64 -4 ) ( -447 -64 -4 ) ( -448 -63 -4 ) StreetsTemplate 384 0 0 1 1
+( -320 64 8 ) ( -320 65 8 ) ( -319 64 8 ) StreetsTemplate 384 0 0 1 1
+( -320 384 4 ) ( -319 384 4 ) ( -320 384 5 ) StreetsTemplate 384 -12 0 1 1
+( -240 -352 4 ) ( -240 -208 132 ) ( -240 -208 4 ) StreetsTemplate 0 -12 0 1 1
+}
+// brush 7
+{
+( -384 384 12 ) ( -384 -384 12 ) ( -384 -384 -4 ) StreetsTemplate 0 -12 0 1 1
+( -384 -384 12 ) ( -336 -384 8 ) ( -336 -384 -4 ) StreetsTemplate 384 -12 0 1 1
+( -336 -384 -4 ) ( -336 384 -4 ) ( -384 384 -4 ) StreetsTemplate 384 0 0 1 1
+( -336 384 -4 ) ( -336 384 8 ) ( -384 384 12 ) StreetsTemplate 384 -12 0 1 1
+( -384 384 12 ) ( -336 384 8 ) ( -336 -384 8 ) StreetsTemplate 384 0 0 1 1
+( -336 -384 8 ) ( -336 384 8 ) ( -336 384 -4 ) StreetsTemplate 0 -12 0 1 1
+}
+// brush 8
+{
+( 16 -192 0 ) ( 16 -191 0 ) ( 16 -192 1 ) Template_Checkered_256_Blue -160 0 0 1 1
+( 0 -224 0 ) ( 0 -224 1 ) ( 1 -224 0 ) Template_Checkered_256_Blue 80 0 0 1 1
+( 0 -192 0 ) ( 1 -192 0 ) ( 0 -191 0 ) Template_Checkered_256_Blue 80 160 0 1 1
+( 32 -160 68 ) ( 32 -159 68 ) ( 33 -160 68 ) Template_Checkered_256_Blue 80 160 0 1 1
+( 32 -192 16 ) ( 33 -192 16 ) ( 32 -192 17 ) Template_Checkered_256_Blue 80 0 0 1 1
+( 48 -160 16 ) ( 48 -160 17 ) ( 48 -159 16 ) Template_Checkered_256_Blue -160 0 0 1 1
+}
+// brush 9
+{
+( 68 -352 40 ) ( 68 -351 40 ) ( 68 -352 41 ) Checkered_128_OldSchoolJoker -4 0 0 1 1
+( 68 -332 60 ) ( 196 -348 40 ) ( 68 -348 40 ) Checkered_128_OldSchoolJoker 100 0 0 1 1
+( 68 -352 40 ) ( 69 -352 40 ) ( 68 -351 40 ) Checkered_128_OldSchoolJoker 100 4 0 1 1
+( 140 -236 60 ) ( 140 -235 60 ) ( 141 -236 60 ) Checkered_128_OldSchoolJoker 100 4 0 1 1
+( 68 -268 60 ) ( 68 -236 40 ) ( 196 -236 40 ) Checkered_128_OldSchoolJoker 100 4 0 1 1
+( 140 -236 44 ) ( 140 -236 45 ) ( 140 -235 44 ) Checkered_128_OldSchoolJoker -4 0 0 1 1
+}
+// brush 10
+{
+( 68 -368 4 ) ( 68 -367 4 ) ( 68 -368 5 ) Checkered_128_OldSchoolJoker -16 4 0 1 1
+( 148 -376 4 ) ( 148 -376 5 ) ( 149 -376 4 ) Checkered_128_OldSchoolJoker 60 4 0 1 1
+( 148 -368 4 ) ( 149 -368 4 ) ( 148 -367 4 ) Checkered_128_OldSchoolJoker 60 16 0 1 1
+( 212 -352 40 ) ( 212 -351 40 ) ( 213 -352 40 ) Checkered_128_OldSchoolJoker 60 16 0 1 1
+( 68 -192 28 ) ( 196 -208 36 ) ( 68 -208 36 ) Checkered_128_OldSchoolJoker 60 16 0 1 1
+( 212 -192 20 ) ( 213 -192 20 ) ( 212 -192 21 ) Checkered_128_OldSchoolJoker 60 4 0 1 1
+( 140 -352 20 ) ( 140 -352 21 ) ( 140 -351 20 ) Checkered_128_OldSchoolJoker -16 4 0 1 1
+}
+// brush 11
+{
+( 240 608 4 ) ( 240 752 4 ) ( 240 752 132 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+( -448 416 -28 ) ( -448 416 -27 ) ( -447 416 -28 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( -448 736 -4 ) ( -447 736 -4 ) ( -448 737 -4 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( -320 864 8 ) ( -320 865 8 ) ( -319 864 8 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( -320 1184 4 ) ( -319 1184 4 ) ( -320 1184 5 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( 336 592 4 ) ( 336 688 132 ) ( 336 688 4 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+}
+// brush 12
+{
+( 144 1184 4 ) ( 144 416 4 ) ( 144 416 -4 ) StreetsTemplate -32 -16 0 1 1
+( 144 416 4 ) ( 240 416 0 ) ( 240 416 -4 ) StreetsTemplate 384 -16 0 1 1
+( 240 416 -4 ) ( 240 1184 -4 ) ( 144 1184 -4 ) StreetsTemplate 384 -32 0 1 1
+( 240 1184 -4 ) ( 240 1184 0 ) ( 144 1184 4 ) StreetsTemplate 384 -16 0 1 1
+( 144 1184 4 ) ( 240 1184 0 ) ( 240 416 0 ) StreetsTemplate 384 -32 0 1 1
+( 240 416 0 ) ( 240 1184 0 ) ( 240 1184 -4 ) StreetsTemplate -32 -16 0 1 1
+}
+// brush 13
+{
+( 0 1184 6 ) ( 0 416 6 ) ( 0 416 -4 ) StreetsTemplate -32 -16 0 1 1
+( 0 416 6 ) ( 144 416 4 ) ( 144 416 -4 ) StreetsTemplate 384 -16 0 1 1
+( 144 416 -4 ) ( 144 1184 -4 ) ( 0 1184 -4 ) StreetsTemplate 384 -32 0 1 1
+( 144 1184 -4 ) ( 144 1184 4 ) ( 0 1184 6 ) StreetsTemplate 384 -16 0 1 1
+( 0 1184 6 ) ( 144 1184 4 ) ( 144 416 4 ) StreetsTemplate 384 -32 0 1 1
+( 144 416 4 ) ( 144 1184 4 ) ( 144 1184 -4 ) StreetsTemplate -32 -16 0 1 1
+}
+// brush 14
+{
+( -144 1184 4 ) ( -144 416 4 ) ( -144 416 -4 ) StreetsTemplate -32 -16 0 1 1
+( -144 1184 4 ) ( 0 1184 6 ) ( 0 416 6 ) StreetsTemplate 384 -32 0 1 1
+( -144 416 4 ) ( 0 416 6 ) ( 0 416 -4 ) StreetsTemplate 384 -16 0 1 1
+( 0 416 -4 ) ( 0 1184 -4 ) ( -144 1184 -4 ) StreetsTemplate 384 -32 0 1 1
+( 0 1184 -4 ) ( 0 1184 6 ) ( -144 1184 4 ) StreetsTemplate 384 -16 0 1 1
+( 0 416 6 ) ( 0 1184 6 ) ( 0 1184 -4 ) StreetsTemplate -32 -16 0 1 1
+}
+// brush 15
+{
+( -240 1184 0 ) ( -240 416 0 ) ( -240 416 -4 ) StreetsTemplate -32 -16 0 1 1
+( -240 1184 0 ) ( -144 1184 4 ) ( -144 416 4 ) StreetsTemplate 384 -32 0 1 1
+( -240 416 0 ) ( -144 416 4 ) ( -144 416 -4 ) StreetsTemplate 384 -16 0 1 1
+( -144 416 -4 ) ( -144 1184 -4 ) ( -240 1184 -4 ) StreetsTemplate 384 -32 0 1 1
+( -144 1184 -4 ) ( -144 1184 4 ) ( -240 1184 0 ) StreetsTemplate 384 -16 0 1 1
+( -144 416 4 ) ( -144 1184 4 ) ( -144 1184 -4 ) StreetsTemplate -32 -16 0 1 1
+}
+// brush 16
+{
+( -384 1184 12 ) ( -384 416 12 ) ( -384 416 -4 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+( -384 416 12 ) ( -336 416 8 ) ( -336 416 -4 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( -336 416 -4 ) ( -336 1184 -4 ) ( -384 1184 -4 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( -336 1184 -4 ) ( -336 1184 8 ) ( -384 1184 12 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( -384 1184 12 ) ( -336 1184 8 ) ( -336 416 8 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( -336 416 8 ) ( -336 1184 8 ) ( -336 1184 -4 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+}
+// brush 17
+{
+( -336 432 4 ) ( -336 640 4 ) ( -336 640 132 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+( -448 416 -28 ) ( -448 416 -27 ) ( -447 416 -28 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( -448 736 -4 ) ( -447 736 -4 ) ( -448 737 -4 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( -320 864 8 ) ( -320 865 8 ) ( -319 864 8 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( -320 1184 4 ) ( -319 1184 4 ) ( -320 1184 5 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( -240 448 4 ) ( -240 592 132 ) ( -240 592 4 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+}
+// brush 18
+{
+( 336 1184 8 ) ( 336 416 8 ) ( 336 416 -4 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+( 336 1184 8 ) ( 384 1184 12 ) ( 384 416 12 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( 336 416 8 ) ( 384 416 12 ) ( 384 416 -4 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( 384 416 -4 ) ( 384 1184 -4 ) ( 336 1184 -4 ) Map/Exterior/Tile_street_sidewalk 384 -32 0 1 1
+( 384 1184 -4 ) ( 384 1184 12 ) ( 336 1184 8 ) Map/Exterior/Tile_street_sidewalk 384 -12 0 1 1
+( 384 416 12 ) ( 384 1184 12 ) ( 384 1184 -4 ) Map/Exterior/Tile_street_sidewalk -32 -12 0 1 1
+}
+}

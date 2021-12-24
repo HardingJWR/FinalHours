@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://item/script/item.gd" type="Script" id=1]
+[ext_resource path="res://item/texture/Handgun.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+label = "Handgun"
+description = "Handgun"
+icon = ExtResource( 2 )
+type = 3
+size = 2
+volume = 50
+equippable = true
+usable = false
+combinable = true
+stackable = false
+quantity = 1

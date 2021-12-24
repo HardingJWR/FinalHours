@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://inventory/scripts/inventory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+label = "Blue Jeans"
+type = 0
+item_type_allowed = [ 2, 1, 0 ]
+item_size_allowed = [ 0, 1 ]
+item_stack = [  ]
+max_volume = 50

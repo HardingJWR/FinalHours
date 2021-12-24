@@ -1,0 +1,156 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://ui/ending/ENDING.gd" type="Script" id=1]
+[ext_resource path="res://textures/SplashBG.jpg" type="Texture" id=2]
+[ext_resource path="res://font/Title.tres" type="DynamicFont" id=3]
+[ext_resource path="res://font/MainMenuButtons.tres" type="DynamicFont" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "FadeFromBlack"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "FadeToBlack"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene = "res://scene/gui/MainMenu.tscn"
+
+[node name="SplashBg" type="Sprite" parent="."]
+position = Vector2( 525, 350 )
+scale = Vector2( 0.584167, 0.584167 )
+texture = ExtResource( 2 )
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -235.5
+margin_top = -211.0
+margin_right = 235.5
+margin_bottom = -93.0
+custom_fonts/font = ExtResource( 3 )
+text = "FINAL HOURS"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Leaving" type="Panel" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Taunting" type="Label" parent="Leaving"]
+margin_left = 120.0
+margin_top = 272.0
+margin_right = 903.0
+margin_bottom = 332.0
+custom_fonts/font = ExtResource( 4 )
+text = "YOU ARE INFECTED
+GAME OVER"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YES" type="Button" parent="Leaving"]
+margin_left = 144.0
+margin_top = 439.0
+margin_right = 870.0
+margin_bottom = 505.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 4 )
+text = "QUIT"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NO" type="Button" parent="Leaving"]
+margin_left = 240.0
+margin_top = 511.0
+margin_right = 786.0
+margin_bottom = 577.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 4 )
+text = "RETURN TO MENU"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
+anims/FadeFromBlack = SubResource( 1 )
+anims/FadeToBlack = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+
+[connection signal="pressed" from="Leaving/YES" to="." method="_on_YES_pressed"]
+[connection signal="pressed" from="Leaving/NO" to="." method="_on_NO_pressed"]

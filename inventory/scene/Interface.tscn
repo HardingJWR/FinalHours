@@ -1,0 +1,47 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://inventory/scripts/Interface.gd" type="Script" id=1]
+[ext_resource path="res://item/resource/Banana.tres" type="Resource" id=2]
+[ext_resource path="res://inventory/resources/BackPack.tres" type="Resource" id=3]
+[ext_resource path="res://inventory/resources/Pants.tres" type="Resource" id=4]
+[ext_resource path="res://item/resource/BigKey.tres" type="Resource" id=5]
+[ext_resource path="res://inventory/resources/HandgunHolster.tres" type="Resource" id=6]
+[ext_resource path="res://item/resource/SmallKey.tres" type="Resource" id=7]
+[ext_resource path="res://item/resource/Handgun.tres" type="Resource" id=8]
+
+[node name="Interface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+SmallKey = ExtResource( 7 )
+BigKey = ExtResource( 5 )
+Banana = ExtResource( 2 )
+HandGun = ExtResource( 8 )
+Pants = ExtResource( 4 )
+HandGunHolster = ExtResource( 6 )
+Backpack = ExtResource( 3 )
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_top = 47.0
+margin_right = 253.0
+margin_bottom = 300.0
+items = [ "Item 0", null, false, "Item 1", null, false ]
+fixed_icon_size = Vector2( 48, 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+margin_right = 253.0
+margin_bottom = 47.0
+text = "N/A"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="item_activated" from="ItemList" to="." method="_on_ItemList_item_activated"]

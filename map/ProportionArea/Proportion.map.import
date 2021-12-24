@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/Proportion.map-c011a0bb5775ffcbc399ef15ec5063f3.tres"
+
+[deps]
+
+source_file="res://map/ProportionArea/Proportion.map"
+dest_files=[ "res://.import/Proportion.map-c011a0bb5775ffcbc399ef15ec5063f3.tres" ]
+
+[params]
+
