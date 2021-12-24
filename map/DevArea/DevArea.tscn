@@ -644,15 +644,6 @@ script = ExtResource( 19 )
 [node name="CollisionShape" type="CollisionShape" parent="Actor"]
 shape = SubResource( 194 )
 
-[node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
-text = "Remove Me
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [connection signal="body_entered" from="ClimbTrigger/Area" to="ClimbTrigger" method="_on_Area_body_entered"]
 [connection signal="body_exited" from="ClimbTrigger/Area" to="ClimbTrigger" method="_on_Area_body_exited"]
 [connection signal="body_entered" from="ClimbTrigger2/Area" to="ClimbTrigger2" method="_on_Area_body_entered"]
